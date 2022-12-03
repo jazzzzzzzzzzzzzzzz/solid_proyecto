@@ -11,12 +11,13 @@ class Shape_O{
 
 
 abstract class Shape{
-    abstract public function area();
+    abstract public function area(string $param): float;
     
 }
 
 class Circle{
-    public function area(){
+    public function area(string $param): float
+    {
         return M_PI * 5 ^ 2;
     }
 
