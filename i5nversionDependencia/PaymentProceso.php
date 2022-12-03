@@ -1,5 +1,6 @@
 <?php
 
-interface PaymentProceso{
+interface PaymentProceso
+{
     public function pay();
 }

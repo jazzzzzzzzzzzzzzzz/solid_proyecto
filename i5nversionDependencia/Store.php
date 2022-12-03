@@ -2,14 +2,18 @@
 
 use MyBank\MyBankApi;
 
-//clase tienda
-class Store{
+
+class Store
+{
     protected $myBankApi;
-    public function __contruct( PaymentProceso $paymentProceso){
+
+    public function __contruct( PaymentProceso $paymentProceso)
+    {
         $this->paymentProceso= $paymentProceso;
     }
 
-    public function purchased(){
+    public function purchased()
+    {
         $this->paymentProceso->charge();
     }
 }
