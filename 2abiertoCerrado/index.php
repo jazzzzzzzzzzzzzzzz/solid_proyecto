@@ -17,4 +17,4 @@ $shop->addProducts($products);
 
 $menu = new Menu();
 
-echo $menu->view($shop->getProducts(), new \App\TextMenuOutput());
+echo $menu->view($shop->getProducts(), new \App\JsonMenuOutput());
