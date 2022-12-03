@@ -11,6 +11,9 @@ $products = [
 
 $shop = new CoffeeeShop();
 
+
 $shop->addProducts($products);
 
-echo $shop->viewMenu();
+$menu = new \App\Menu();
+
+echo $menu->view($shop->getProducts());
